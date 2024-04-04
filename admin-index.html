@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GENEXT</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- sidenav start -->
+      <aside class="sidebar d-flex flex-column flex-shrink-0 p-3 g-primary-bg">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <span class="logo-wrap"
+            ><img src="./assets/icons/logo-sm.svg" alt="GENEXT"
+          /></span>
+        </a>
+        <br />
+        <ul class="nav nav-pills sidebar-items--wrapper">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link active" aria-current="page">
+              <img
+                src="./assets/icons/material-symbols.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/distributor.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> Regional Distributor</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/fluent_building-retail.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm">Retailer</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/document.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> Upload Document</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/lets-icons_status.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> IMEI Activated Status</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- sidenav end -->
+
+      <div class="right-main-container">
+        <!-- top nav start-->
+        <nav
+          class="top navbar navbar-expand-lg g-primary-bg"
+          aria-label="navbar"
+        >
+          <div class="container-fluid">
+            <div class="page-title-wraper">
+              <h1 class="page-title">Admin</h1>
+              <!-- breadcrumb start-->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb g-breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a class="prev-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Admin
+                  </li>
+                </ol>
+              </nav>
+              <!-- breadcrumb end-->
+            </div>
+            <div class="profile-btn" role="button">
+              <img src="./assets/icons/distributor.svg" alt="admin" />
+              <span class="user-name">Admin</span>
+            </div>
+          </div>
+        </nav>
+        <!-- top nav end-->
+
+        <div class="content-container page--dashboard_admin g-primary-bg">
+          <div class="action--wrapper s-right">
+            <a
+              class="btn g-secondary-bg rounded text-white g-primary-btn"
+              href="./create-admin.html"
+              >CREATE ADMIN</a
+            >
+          </div>
+
+          <div class="table-responsive mt-4">
+          
+            
+            <table class="table table-striped table-borderless g-table">
+              <thead>
+                <tr>
+                  <th scope="col">User Name</th>
+                  <th scope="col">User Id</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Mobile Number</th>
+                  <th scope="col">Email ID</th>
+                  <th scope="col">Password</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tr class="placeholder-glow">
+                <td class="placeholder"></span>
+              </tr>
+              <tbody class="table-group-divider">
+             
+                <tr>
+                  <td>Johndoe</td>
+                  <td>john12</td>
+                  <td>Male</td>
+                  <td>+916369724601</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>************</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <img
+                          src="./assets/icons/iconamoon_edit-thin.svg"
+                          alt="edit"
+                        />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

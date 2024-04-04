@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GENEXT</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- sidenav start -->
+      <aside class="sidebar d-flex flex-column flex-shrink-0 p-3 g-primary-bg">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <span class="logo-wrap"
+            ><img src="./assets/icons/logo-sm.svg" alt="GENEXT"
+          /></span>
+        </a>
+        <br />
+        <ul class="nav nav-pills sidebar-items--wrapper">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link active" aria-current="page">
+              <img
+                src="./assets/icons/material-symbols.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/distributor.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> Regional Distributor</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/fluent_building-retail.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm">Retailer</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/document.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> Upload Document</span>
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link link-dark">
+              <img
+                src="./assets/icons/lets-icons_status.svg"
+                class="menu-icon"
+                alt="icon"
+              />
+              <span class="menu-nm"> IMEI Activated Status</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- sidenav end -->
+
+      <div class="right-main-container">
+        <!-- top nav start-->
+        <nav
+          class="top navbar navbar-expand-lg g-primary-bg"
+          aria-label="navbar"
+        >
+          <div class="container-fluid">
+            <div class="page-title-wraper">
+              <h1 class="page-title">Admin</h1>
+               <!-- breadcrumb start-->
+             <nav aria-label="breadcrumb">
+                <ol class="breadcrumb g-breadcrumb">
+                      <li class="breadcrumb-item">
+                    <a class="prev-link" href="#">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item"><a class="prev-link" href="#">Admin</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Create User</li>
+                </ol>
+              </nav>
+               <!-- breadcrumb end-->
+            </div>
+            <div class="profile-btn" role="button">
+              <img src="./assets/icons/distributor.svg" alt="admin" />
+              <span class="user-name">Admin</span>
+            </div>
+          </div>
+        </nav>
+        <!-- top nav end-->
+
+        <div class="content-container page--create_admin g-primary-bg">
+          <div class="action--wrapper s-left">
+            <a class="navigate--back" href="./index.html">
+             <img src="./assets/icons/icons8-left-24.png" alt="back">
+            </a>
+          </div>
+          <div class="form-wrapper col-8">
+            <form action="" class="form-create_admin row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">User name</label>
+                <input
+                  type="email"
+                  class="form-control g-form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">User ID</label>
+                <input
+                  type="password"
+                  class="form-control g-form-control"
+                  id="inputPassword4"
+                />
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-6">
+                  <label for="inputGender" class="form-label">Gender</label>
+                  <select
+                    id="inputGender"
+                    class="form-select g-form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>select</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email Id</label>
+                <input
+                  type="email"
+                  class="form-control g-form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control g-form-control"
+                  id="inputPassword4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Status</label>
+                <input
+                  type="email"
+                  class="form-control g-form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputProfileImage" class="form-label">Profile</label>
+               <div class="g-file-u-wrapper">
+                <input
+                type="file"
+                class="form-control g-form-control g-file-u"
+                id="inputProfileImage"
+              />
+                <div class="c-file-u-control g-form-control">
+                    <img src="./assets/icons/distributor.svg" alt="profile image" class="g-icon">
+                    <span class="choose-file-btn">Choose Image</span>
+                </div>
+               </div>
+              </div>
+              <div class="col-md-6">
+                <div class="btn g-secondary-btn text-uppercase">reset</div>
+                <div class="btn g-primary-btn text-uppercase">create user</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
