@@ -15,51 +15,53 @@
           <div class="login-banner">
             <img src="./assets/images/login-banner.png" alt="GENEXT" />
           </div>
-          <form class="login-form">
-            <div class="header-w row">
-              <img
-                class="mb-4 col-2"
-                src="./assets/icons/avatar.svg"
-                alt="login"
-                width="50"
-                height="50"
-              />
-              <div class="header-text col-10">
-                <h1 class="h2 fw-normal">Sign in</h1>
-                <p class="mb-3 fw-normal">
-                  Welcome! Please Login to admin dashboard.
-                </p>
+          <div class="wrap-form">
+            <form class="login-form">
+              <div class="header-w row">
+                <img
+                  class="mb-4 col-2"
+                  src="./assets/icons/avatar.svg"
+                  alt="login"
+                  width="50"
+                  height="50"
+                />
+                <div class="header-text col-10">
+                  <h1 class="h2 fw-normal">Sign in</h1>
+                  <p class="mb-3 fw-normal">
+                    Welcome! Please Login to admin dashboard.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="form-floating mb-2">
-              <input
-                type="email"
-                class="form-control g-form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-2">
-              <input
-                type="password"
-                class="form-control g-form-control"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
-            <div class="row px-2">
-              <a href="#" class="text-highlighted forgot-psd-link col-9 d-block mb-2"
-                >Forgot password?</a
-              >
-              <div class="col-3 p-0">
-                <a class="btn w-100 g-primary-btn" href="./index.html" type="submit">
-                  Log in
-                </a>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control g-form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
               </div>
-            </div>
-          </form>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control g-form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="row px-2 form-floating-action">
+                <a href="#" class="text-highlighted forgot-psd-link col-9 d-block mb-2"
+                  >Forgot password?</a
+                >
+                <div class="col-3 p-0">
+                  <a class="btn w-100 g-primary-btn" href="./index.html" type="submit">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
