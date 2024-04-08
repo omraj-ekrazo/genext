@@ -179,13 +179,30 @@
                </div>
               </div>
               <div class="col-md-6">
-                <div class="btn g-secondary-btn text-uppercase">reset</div>
-                <div class="btn g-primary-btn text-uppercase">create user</div>
+                <div class="btn g-secondary-btn text-uppercase" role="button">reset</div>
+                <div class="btn g-primary-btn text-uppercase" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">create user</div>
               </div>
             </form>
           </div>
         </div>
       </div>
+
+<!-- ==========MODAL START================== -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <img src="./assets/icons/check-shield-green-fill-icon.svg" class="icon-btn" width="40" height="40" alt="export file">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Account Created Successfully</h1>
+      </div>
+      <div class="modal-footer justify-content-center border-0">
+        <button type="button" class="btn g-secondary-btn" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==========MODAL END================== -->
+
     </main>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
