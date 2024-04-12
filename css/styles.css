@@ -180,6 +180,10 @@ body {
 .form-create_admin {
   margin-top: 20px;
 }
+.page-link:focus {
+  background: #ffefef;
+  box-shadow: 0 0 0 0.25rem rgba(255, 239, 239, 0.395);
+}
 .nav-pills .nav-link,
 .nav-pills .show {
   color: #000;
@@ -401,14 +405,16 @@ body {
 }
 .auth-login .login-banner {
   width: 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
 .auth-login .login-banner img {
-  width: 100%;
+  width: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .auth-login .wrap-form {
   width: 60%;
@@ -420,6 +426,7 @@ body {
 .auth-login .login-form {
   width: 500px;
   height: 100%;
+  max-height: 400px;
   padding: 30px;
   display: block;
   border: 1px solid #ccc;
@@ -497,4 +504,29 @@ body {
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+}
+@media (min-width: 1600px) {
+  .auth-login .wrap-login {
+    height: 570px;
+  }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    width: 270px;
+    max-width: 270px;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: -100vw;
+  }
+  .sidebar:after {
+    content: "";
+    width: calc(100vw - 270px);
+    height: 100dvh;
+    background: #0000004d;
+    position: absolute;
+    top: 0;
+    right: -141px;
+  }
 }
